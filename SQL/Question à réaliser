@@ -1,0 +1,107 @@
+à partir du schéma en utilisant les requêtes SQL, vous devez :
+1/ Créer la base donnée sous nom "boutique".
+
+	CREATE DATABASE boutique
+
+2/ Création des tables (Manufacturers, Products), voir fichier build-shema
+
+	CREATE TABLE Manufacturers (
+  	Code INTEGER,
+  	Name VARCHAR(255) NOT NULL,
+  	PRIMARY KEY (Code)   
+	);
+
+	CREATE TABLE Products (
+	  Code INTEGER,
+	  Name VARCHAR(255) NOT NULL ,
+	  Price DECIMAL NOT NULL ,
+	  Manufacturer INTEGER NOT NULL,
+	  PRIMARY KEY (Code), 
+	  FOREIGN KEY (Manufacturer) REFERENCES Manufacturers(Code)
+	) ENGINE=INNODB;
+
+3/ Sélectionnez les noms de tous les produits du magasin.
+
+	SELECT name FROM `products`;
+
+4/ Sélectionner les noms et les prix de tous les produits du magasin.
+
+	SELECT Name, Price FROM `products`;
+
+5/ Sélectionner le nom des produits dont le prix est inférieur ou égal à 200 $.
+
+	SELECT Name FROM Products WHERE price<=200;
+
+6/ Sélectionnez tous les produits dont le prix est compris entre 60 et 120 dollars.
+
+	SELECT Name FROM `products` WHERE Price BETWEEN 60 AND 120;
+
+7/ Sélectionnez le nom et le prix en cents (c'est-à-dire que le prix doit être multiplié par 100).
+
+8/ Calculer le prix moyen de tous les produits.
+
+	SELECT AVG(Price)FROM products; 
+
+9/ Calculer le prix moyen de tous les produits dont le code fabricant est égal à 2.
+
+	SELECT AVG(Price) FROM products WHERE Manufacturer= 2;
+
+10/ Calculer le nombre de produits dont le prix est supérieur ou égal à 180 dollars.
+
+	SELECT COUNT(Price) FROM products WHERE price>= 180;
+
+11/ Sélectionner le nom et le prix de tous les produits dont le prix est supérieur ou égal à 180 dollars, et trier d'abord par prix (par ordre décroissant), puis par nom (par ordre croissant).
+
+	SELECT Name, Price FROM `products` WHERE Price>=180  ORDER BY Price DESC,Name;
+
+12/ Sélectionnez toutes les données des produits, y compris toutes les données relatives au fabricant de chaque produit.
+
+	SELECT * FROM products, manufacturers ;
+
+	SELECT * FROM products JOIN manufacturers;
+
+13/ Sélectionnez le nom du produit, le prix et le nom du fabricant de tous les produits.
+
+	SELECT manufacturers.Name, Price,products.Name FROM products INNER JOIN manufacturers ON manufacturers.Code=products.Manufacturer;
+
+14/ Sélectionnez le prix moyen des produits de chaque fabricant, en indiquant uniquement le code du fabricant.
+
+	SELECT manufacturers.code, AVG(price) FROM manufacturers INNER JOIN products ON manufacturers.Code=products.Manufacturer GROUP BY manufacturers.Name;
+
+15/ Sélectionnez le prix moyen des produits de chaque fabricant, en indiquant le nom du fabricant.
+
+	SELECT manufacturers.Name, AVG(price) FROM manufacturers INNER JOIN products ON manufacturers.Code=products.Manufacturer GROUP BY manufacturers.Name;
+
+16/ Sélectionnez les noms des fabricants dont les produits ont un prix moyen supérieur ou égal à 150 $.
+
+	SELECT manufacturers.Name  FROM manufacturers INNER JOIN products ON manufacturers.Code=products.Manufacturer GROUP BY manufacturers.Name HAVING 	AVG(price)>=150 ;
+
+17/ Sélectionnez le nom et le prix du produit le moins cher.
+
+	SELECT MIN(Price) FROM products 
+
+18/ Sélectionnez le nom de chaque fabricant ainsi que le nom et le prix de son produit le plus cher.
+
+	SELECT manufacturers.Name AS manufacturers_name, products.Name AS products_name, MAX(price) AS most_expensive_product FROM products INNER JOIN 	manufacturers on manufacturers.Code=products.Manufacturer GROUP BY manufacturers.Name  
+
+19/ Ajouter un nouveau produit : Loudspeakers, 70 $, manufacter 2 
+
+	INSERT INTO products (Name,Price ,Manufacturer )VALUES('Loudspeakers', 70, 2)
+	UPDATE `products` SET `Code` = '1' WHERE `products`.`Code` = 0; 
+
+
+20/ Mettre à jour le nom du produit 8 en "laser Print".
+
+	UPDATE `products` SET `Name` = 'laser Print' WHERE `products`.`Code` = 8; 
+
+21/ Appliquer une remise de 10 % à tous les produits.
+
+	UPDATE products SET price = price - (price * 0.1)
+
+22/ Appliquer une remise de 10 % à tous les produits dont le prix est supérieur ou égal à 120 $.
+
+	UPDATE products SET price = price - (price * 0.1) WHERE price >= 120
+
+
+
+NB: manufacturer c'est le fabricant
