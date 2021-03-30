@@ -1,0 +1,29 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+}
+
+.login {
+  width: 30%;
+  margin: 100px auto;
+  padding: 10px;
+}
+.l-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.l-input {
+  width: 300px;
+  height: 40px;
+  margin: 10px auto;
+  padding: 0px 5px;
+}
+.l-s {
+  text-decoration: none;
+  margin-left: 50px;
+  color: blue;
+}
