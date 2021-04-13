@@ -1,0 +1,61 @@
+$white: #fff;
+$delete: #f10e;
+$edit: #0e49b5;
+$add: #34bf49;
+$button: #ff6319;
+$tablerow: #dddddd;
+$tablehd: #4caf50;
+
+.delete {
+  padding: 5px 15px;
+  background-color: $delete;
+  color: $white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.edit {
+  padding: 5px 15px;
+  background-color: $edit;
+  color: $white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.add {
+  padding: 5px 15px;
+  background-color: $add;
+  color: $white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.button {
+  padding: 5px 15px;
+  background-color: $button;
+  color: $white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+// .btn-add {
+//   padding: 5px 15px;
+//   background-color: $add;
+//   color: $white;
+//   text-decoration: none;
+//   border-radius: 5px;
+// }
+.back {
+  padding: 5px 30px;
+  position: fixed;
+  left: 65px;
+  top: 65px;
+}

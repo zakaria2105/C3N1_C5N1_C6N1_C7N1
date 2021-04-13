@@ -1,0 +1,427 @@
+.delete {
+  padding: 5px 15px;
+  background-color: #f10e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.edit {
+  padding: 5px 15px;
+  background-color: #0e49b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.add {
+  padding: 5px 15px;
+  background-color: #34bf49;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button {
+  padding: 5px 15px;
+  background-color: #ff6319;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.back {
+  padding: 5px 30px;
+  position: fixed;
+  left: 65px;
+  top: 65px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+  width: 300px;
+  height: 40px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px red;
+}
+
+.f-table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  text-align: center;
+  width: 300px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 6px 0px black;
+          box-shadow: 0px 2px 6px 0px black;
+}
+
+.m-title {
+  margin-bottom: 10px;
+}
+
+.m-select {
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+#open {
+  position: absolute;
+  left: 45%;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.stats .total-dev, .stats .liste-exp {
+  width: 350px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.login {
+  width: 30%;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+.l-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.l-input {
+  width: 300px;
+  height: 40px;
+  margin: 10px auto;
+  padding: 0px 5px;
+}
+
+.l-s {
+  margin-left: 50px;
+  color: blue;
+}
+
+.signup {
+  width: 30%;
+  margin: 100px auto;
+}
+
+.s-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.s-input {
+  width: 300px;
+  height: 40px;
+  margin: 10px auto;
+  padding: 0px 5px;
+}
+
+#SignUp {
+  background: linen;
+  font-size: 18px;
+  border: 1px solid dashed;
+  border-radius: 10px;
+}
+
+#SignUp:hover {
+  font-weight: bold;
+  background-color: aliceblue;
+}
+
+.progress {
+  width: 300px;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 20px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #5b9cf1;
+  border-radius: 6px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #423d3d;
+}
+
+.static-form {
+  width: 30%;
+  margin: 20px auto;
+}
+
+.profile {
+  width: 30%;
+  margin: 100px auto;
+}
+
+.profile .p-form {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.formation {
+  margin: 100px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.teckno {
+  width: 15%;
+  margin: 20px 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 6px 0px black;
+          box-shadow: 0px 2px 6px 0px black;
+}
+
+.f-h4 {
+  margin-bottom: 20px;
+}
+
+.f-input {
+  margin-bottom: 20px;
+}
+
+.f-submit {
+  height: 30px;
+  width: 17%;
+  border-radius: 10px;
+  border: 1px solid aliceblue;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 41%;
+  top: 100%;
+}
+
+.crud {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.c-form {
+  text-align: center;
+  width: 300px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 6px 0px black;
+          box-shadow: 0px 2px 6px 0px black;
+}
+
+.crud {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+body {
+  background-color: #e4fbff;
+}
+
+nav {
+  height: 40px;
+  background: #085dad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .n-title {
+  text-align: center;
+  color: #fff;
+}
+
+nav .n-title .h-h2 {
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+nav .link {
+  text-align: center;
+  line-height: 40px;
+}
+
+nav .link .h-liste {
+  list-style: none;
+}
+
+nav .link .h-liste .h-li {
+  padding: 0 10px;
+  float: left;
+}
+
+nav .link .h-liste .h-li .h-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .link .h-liste .h-li .h-link .h-link:hover {
+  color: red;
+}
+
+nav .logout {
+  line-height: 40px;
+}
+
+nav .logout .h-logout {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  background-color: #085dad;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.t-input {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=main.css.map */

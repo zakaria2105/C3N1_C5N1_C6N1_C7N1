@@ -1,0 +1,34 @@
+@import 'sass/Component/buttons';
+@import 'sass/Component/table';
+@import 'sass/Component/modal';
+@import 'sass/Helpers/mixin';
+@import 'sass/Helpers/variable';
+@import 'sass/Pages/formation';
+@import 'sass/Pages/dashboard';
+@import 'sass/Pages/index';
+@import 'sass/Pages/signup';
+@import 'sass/Pages/skils';
+@import 'sass/Pages/profile';
+@import 'sass/Pages/skilsform';
+@import 'sass/Pages/Etechno';
+@import 'sass/Layout/header';
+@import 'sass/Layout/footer';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: $background;
+}
+h1 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+.t-input {
+  margin: 10px 0;
+}
